@@ -1,0 +1,27 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@std/assert@1": "1.0.7",
+    "jsr:@std/internal@^1.0.5": "1.0.5"
+  },
+  "jsr": {
+    "@std/assert@1.0.7": {
+      "integrity": "64ce9fac879e0b9f3042a89b3c3f8ccfc9c984391af19e2087513a79d73e28c3",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    }
+  },
+  "remote": {
+    "https://deno.land/x/deno_gpio@1.4.0/mod.ts": "8829ebbc67b9d865c16e631c1eca9b2fcd674c20aa5d009f6fe5f3c60f7609eb",
+    "https://raw.githubusercontent.com/grevend/singleton/main/mod.ts": "54b5e9e26b7c6d1f56689e363cd7a40ebbb6d17dfc26ce2a66cde78e15a5b7d4"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@1"
+    ]
+  }
+}
