@@ -1,7 +1,9 @@
 # Use the official Bun image
-# See all versions at https://hub.docker.com/r/oven/bun/tags
 FROM oven/bun:1 AS base
 WORKDIR /usr/src/app
+
+# Install required build tools for native bindings
+RUN apt-get update && apt-get install -y build-essential python3
 
 # Install dependencies into a temp directory to cache and speed up future builds
 FROM base AS install
